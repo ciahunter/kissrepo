@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+sed "s#/usr/local#/usr#" \
+    config.mk > _
+mv -f _ config.mk
+
+for p in *.patch; do
+	echo "$p"
+	patch -p1 < $p
+done
+
+make
+make install

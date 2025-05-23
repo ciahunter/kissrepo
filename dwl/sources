@@ -1,0 +1,4 @@
+https://codeberg.org/dwl/dwl/releases/download/v0.7/dwl-v0.7.tar.gz
+files/config.h
+patches/01-swallow.patch
+patches/02-unclutter.patch
