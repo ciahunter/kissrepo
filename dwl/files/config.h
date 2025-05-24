@@ -26,7 +26,7 @@ static int log_level = WLR_ERROR;
 static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   isterm   noswallow   monitor */
 	/* examples: */
-	{ "havoc",             NULL,       0,            0,           1,       1,          -1 },
+	{ "foot",             NULL,       0,            0,           1,       1,          -1 },
 };
 
 /* layout(s) */
@@ -138,7 +138,7 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_m,          setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                    XKB_KEY_space,      setlayout,      {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_space,      togglefloating, {0} },
-	{ MODKEY,                    XKB_KEY_e,         togglefullscreen, {0} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_f,         togglefullscreen, {0} },
 	{ MODKEY,                    XKB_KEY_a,          toggleswallow,  {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_A,          toggleautoswallow,{0} },
 	{ MODKEY,                    XKB_KEY_0,          view,           {.ui = ~0} },
