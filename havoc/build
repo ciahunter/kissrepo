@@ -6,5 +6,5 @@ sed "s#/usr/local#/usr#" \
     Makefile > _
 mv -f _ Makefile
 
-make
+make CFLAGS="-DNDEBUG"
 make install
