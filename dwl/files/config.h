@@ -8,7 +8,7 @@ static const int sloppyfocus               = 1;  /* focus follows mouse */
 static const int bypass_surface_visibility = 0;  /* 1 means idle inhibitors will disable idle tracking even if it's surface isn't visible  */
 static const unsigned int borderpx         = 1;  /* border pixel of windows */
 static const float rootcolor[]             = COLOR(0x222222ff);
-static const float bordercolor[]           = COLOR(0x444444ff);
+static const float bordercolor[]           = COLOR(0x999999bb);
 static const float focuscolor[]            = COLOR(0xffffffff);
 static const float urgentcolor[]           = COLOR(0xff0000ff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
@@ -119,11 +119,13 @@ static const int cursor_timeout = 5;
 
 /* commands */
 static const char *termcmd[] = { "foot", NULL };
+static const char *webcmd[] = { "firefox", NULL };
 
 static const Key keys[] = {
 	/* Note that Shift changes certain key codes: c -> C, 2 -> at, etc. */
 	/* modifier                  key                 function        argument */
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Return,     spawn,          {.v = termcmd} },
+	{ MODKEY,                    XKB_KEY_q,          spawn,          {.v = webcmd} },
 	{ MODKEY,                    XKB_KEY_j,          focusstack,     {.i = +1} },
 	{ MODKEY,                    XKB_KEY_k,          focusstack,     {.i = -1} },
 	{ MODKEY,                    XKB_KEY_i,          incnmaster,     {.i = +1} },
@@ -133,12 +135,8 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_Return,     zoom,           {0} },
 	{ MODKEY,                    XKB_KEY_Tab,        view,           {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_C,          killclient,     {0} },
-	{ MODKEY,                    XKB_KEY_t,          setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                    XKB_KEY_f,          setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                    XKB_KEY_m,          setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                    XKB_KEY_space,      setlayout,      {0} },
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_space,      togglefloating, {0} },
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_f,         togglefullscreen, {0} },
+	{ MODKEY,                    XKB_KEY_x,          togglefloating, {0} },
+	{ MODKEY,                    XKB_KEY_f,          togglefullscreen, {0} },
 	{ MODKEY,                    XKB_KEY_a,          toggleswallow,  {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_A,          toggleautoswallow,{0} },
 	{ MODKEY,                    XKB_KEY_0,          view,           {.ui = ~0} },
