@@ -25,19 +25,19 @@ static bool active_color_title = true;
 // scale
 static uint32_t buffer_scale = 1;
 // font
-static char *fontstr = "monospace:size=16";
+static char *fontstr = "monospace:size=12";
 // tag names
 static char *tags_names[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 // set 16-bit colors for bar
 // use either pixman_color_t struct or HEX_COLOR macro for 8-bit colors
 static pixman_color_t active_fg_color = HEX_COLOR(0xffffffff);
-static pixman_color_t active_bg_color = HEX_COLOR(0x000000ff);
-static pixman_color_t occupied_fg_color = HEX_COLOR(0xffffffff);
-static pixman_color_t occupied_bg_color = HEX_COLOR(0x000000ff);
+static pixman_color_t active_bg_color = HEX_COLOR(0x000000bb);
+static pixman_color_t occupied_fg_color = HEX_COLOR(0x444444ff);
+static pixman_color_t occupied_bg_color = HEX_COLOR(0x000000bb);
 static pixman_color_t inactive_fg_color = HEX_COLOR(0x444444ff);
-static pixman_color_t inactive_bg_color = HEX_COLOR(0x000000ff);
+static pixman_color_t inactive_bg_color = HEX_COLOR(0x000000bb);
 static pixman_color_t urgent_fg_color = HEX_COLOR(0xff0000ff);
 static pixman_color_t urgent_bg_color = HEX_COLOR(0x000000ff);
 static pixman_color_t middle_bg_color = HEX_COLOR(0x222222ff);
-static pixman_color_t middle_bg_color_selected = HEX_COLOR(0x005577ff);
+static pixman_color_t middle_bg_color_selected = HEX_COLOR(0x000000bb);
