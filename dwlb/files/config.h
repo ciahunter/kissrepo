@@ -33,9 +33,9 @@ static char *tags_names[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 // use either pixman_color_t struct or HEX_COLOR macro for 8-bit colors
 static pixman_color_t active_fg_color = HEX_COLOR(0xffffffff);
 static pixman_color_t active_bg_color = HEX_COLOR(0x000000bb);
-static pixman_color_t occupied_fg_color = HEX_COLOR(0x444444ff);
+static pixman_color_t occupied_fg_color = HEX_COLOR(0x999999bb);
 static pixman_color_t occupied_bg_color = HEX_COLOR(0x000000bb);
-static pixman_color_t inactive_fg_color = HEX_COLOR(0x444444ff);
+static pixman_color_t inactive_fg_color = HEX_COLOR(0x999999bb);
 static pixman_color_t inactive_bg_color = HEX_COLOR(0x000000bb);
 static pixman_color_t urgent_fg_color = HEX_COLOR(0xff0000ff);
 static pixman_color_t urgent_bg_color = HEX_COLOR(0x000000ff);
