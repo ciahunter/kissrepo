@@ -3,8 +3,8 @@
 export DESTDIR="$1"
 
 sed "s#/usr/local#/usr#" \
-    config.mk > _
-mv -f _ config.mk
+    Makefile > _
+mv -f _ Makefile
 
 sed "s#ENABLE_XWAYLAND = 1#ENABLE_XWAYLAND = 0#" \
     config.mk > _
