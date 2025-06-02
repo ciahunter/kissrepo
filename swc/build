@@ -10,5 +10,13 @@ sed "s#ENABLE_XWAYLAND = 1#ENABLE_XWAYLAND = 0#" \
     config.mk > _
 mv -f _ config.mk
 
+sed "s#ENABLE_STATIC = 1#ENABLE_STATIC = 0#" \
+    config.mk > _
+mv -f _ config.mk
+
+sed "s#ENABLE_DEBUG = 1#ENABLE_DEBUG = 0#" \
+    config.mk > _
+mv -f _ config.mk
+
 make
 make install
