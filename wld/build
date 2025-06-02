@@ -6,5 +6,17 @@ sed "s#/usr/local#/usr#" \
     Makefile > _
 mv -f _ Makefile
 
+sed "s#ENABLE_DEBUG        = 1#ENABLE_DEBUG        = 0#" \
+    config.mk > _
+mv -f _ config.mk
+
+sed "s#ENABLE_STATIC        = 1#ENABLE_STATIC        = 0#" \
+    config.mk > _
+mv -f _ config.mk
+
+sed "s#DRM_DRIVERS         = intel nouveau#DRM_DRIVERS         = intel#" \
+    config.mk > _
+mv -f _ config.mk
+
 make
 make install
