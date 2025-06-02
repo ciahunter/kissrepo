@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+sed "s#/usr/local#/usr#" \
+    Makefile > _
+mv -f _ Makefile
+
+make
+make install
