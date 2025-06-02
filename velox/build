@@ -6,7 +6,7 @@ sed "s#/usr/local#/usr#" \
     Makefile > _
 mv -f _ Makefile
 
-sed "s#ENABLE_DEBUG = 1#ENABLE_DEBUG = 0#" \
+sed "s#ENABLE_DEBUG    = 1#ENABLE_DEBUG    = 0#" \
     config.mk > _
 mv -f _ config.mk
 
