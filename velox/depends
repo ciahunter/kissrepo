@@ -3,10 +3,5 @@ mesa
 linux-headers make
 wayland
 wayland-protocols make
-libdrm
-libinput
-libxkbcommon
-pixman
-wld
 pkgconf make
 swc
