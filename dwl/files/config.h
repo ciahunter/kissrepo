@@ -118,7 +118,7 @@ static const int cursor_timeout = 5;
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *termcmd[] = { "foot", NULL };
+static const char *termcmd[] = { "footclient", NULL };
 static const char *webcmd[] = { "firefox", NULL };
 
 static const Key keys[] = {
