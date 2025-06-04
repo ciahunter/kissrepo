@@ -126,6 +126,7 @@ static const Key keys[] = {
 	/* modifier                  key                 function        argument */
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Return,     spawn,          {.v = termcmd} },
 	{ MODKEY,                    XKB_KEY_q,          spawn,          {.v = webcmd} },
+	{ MODKEY,                    XKB_KEY_b,          spawn,          SHCMD("dwlb -toggle-visibility all") },
 	{ 0, XKB_KEY_XF86AudioMute,                      spawn,          SHCMD("amixer set Master 1+ toggle") },
 	{ 0, XKB_KEY_XF86AudioLowerVolume,               spawn,          SHCMD("amixer set Master 5%-") },
 	{ 0, XKB_KEY_XF86AudioRaiseVolume,               spawn,          SHCMD("amixer set Master 5%+") },
