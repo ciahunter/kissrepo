@@ -1,0 +1,5 @@
+linux-headers make
+zig-wayland
+wlroots
+zig-bin make
+zig-pixman
