@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+zig build -Doptimize=ReleaseSafe --prefix /usr install

@@ -2,8 +2,8 @@
 
 cat <<EOF
 
-NOTE: In order to function, dwl must be launched either
-      with 'seatd-launch [args] dwl [args]' or under a
+NOTE: In order to function, river must be launched either
+      with 'seatd-launch [args] river [args]' or under a
       running seatd daemon.
 
 NOTE: You must set XDG_RUNTIME_DIR in your shellrc

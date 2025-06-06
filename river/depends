@@ -1,0 +1,12 @@
+libevdev
+libinput
+libseat
+libxkbcommon
+linux-headers make
+mesa
+pkgconf make
+wayland
+wayland-protocols make
+wlroots
+zig-bin make
+pixman
