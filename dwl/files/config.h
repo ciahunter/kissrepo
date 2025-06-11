@@ -26,7 +26,7 @@ static int log_level = WLR_ERROR;
 static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   isterm   noswallow   monitor */
 	/* examples: */
-	{ "foot",             NULL,       0,            0,           1,       1,          -1 },
+	{ "havoc",             NULL,       0,            0,           1,       1,          -1 },
 };
 
 /* layout(s) */
@@ -118,7 +118,7 @@ static const int cursor_timeout = 5;
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *termcmd[] = { "footclient", NULL };
+static const char *termcmd[] = { "havoc", NULL };
 static const char *webcmd[] = { "firefox", NULL };
 
 static const Key keys[] = {
