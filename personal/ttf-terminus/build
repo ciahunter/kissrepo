@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+unzip ./latest.zip
+
+mkdir -p "$1/usr/share/fonts/TTF"
+cp -LR ./terminus-ttf-4.49.3/*.ttf "$1/usr/share/fonts/TTF/"
