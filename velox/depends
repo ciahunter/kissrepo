@@ -1,7 +1,0 @@
-libevdev
-mesa
-linux-headers make
-wayland
-wayland-protocols make
-pkgconf make
-swc
