@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+patch -p1 < no-perl.patch
+
+make oldconfig
+make syncconfig
+
+! [ "$KERNEL_EDITCONFIG" ] || {
+        make nconfig >/dev/tty
+        cp .config "$HOME/repos/personal/linux/files/"
+        exit 1
+}
+
+make 
+
+install -Dm755 arch/x86/boot/bzImage "$1/boot/vmlinuz-kiss"

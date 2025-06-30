@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+mkdir -p "$1/usr/lib/firmware/intel-ucode/"
+
+cp iwlwifi-6000g2a-6.ucode "$1/usr/lib/firmware/"
+cp intel-ucode/06-b7-01 "$1/usr/lib/firmware/intel-ucode/"
