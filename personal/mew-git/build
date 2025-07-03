@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+CFLAGS="$CFLAGS -Wno-incompatible-pointer-types"
+
+make
+make DESTDIR="$1" PREFIX=/usr install

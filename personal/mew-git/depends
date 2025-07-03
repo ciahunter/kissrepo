@@ -1,0 +1,6 @@
+fcft
+libxkbcommon
+pixman
+pkgconf make
+wayland
+wayland-protocols make

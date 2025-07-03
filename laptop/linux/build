@@ -7,7 +7,7 @@ make syncconfig
 
 ! [ "$KERNEL_EDITCONFIG" ] || {
         make nconfig >/dev/tty
-        cp .config "$HOME/repos/personal/linux/files/"
+        cp .config "$HOME/repos/kissrepo/personal/linux-laptop/files/"
         exit 1
 }
 
